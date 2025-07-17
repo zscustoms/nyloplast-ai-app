@@ -16,7 +16,7 @@ const mockStructures = [
   { id: "STR-105", diameter: 24, rim: 899.90, out: 895.27, casting: "SOLID COVER", type: "NYLOPLAST DRAIN BASIN" }
 ];
 
-const pricingTable = {
+const pricingTable: Record<number, Record<number, number>> = {
   8:  { 3: 413, 5: 427, 7: 484, 10: 517 },
   10: { 3: 522, 5: 582, 7: 619, 10: 721 },
   12: { 3: 805, 5: 855, 7: 1042, 10: 1102 },
@@ -27,10 +27,10 @@ const pricingTable = {
   36: { 3: 4541, 5: 5030, 7: 5499, 10: 6225 }
 };
 
-
-const domeSurcharge = {
+const domeSurcharge: Record<number, number> = {
   8: 45, 10: 51, 12: 76, 15: 146, 18: 269, 24: 328, 30: 647
 };
+
 
 
 
